@@ -15,9 +15,9 @@ class DirectAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        // if ($request->path() === '/') {
-        //     return redirect('/admin');
-        // }
+        if ($request->path() === '/') {
+            return redirect('/admin');
+        }
         return $next($request);
     }
 }
