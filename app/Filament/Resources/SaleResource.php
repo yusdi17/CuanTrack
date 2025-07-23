@@ -10,18 +10,20 @@ use App\Models\Category;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Tabs\Tab;
+use Filament\Tables\Actions\ExportAction;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\SaleResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\SaleResource\RelationManagers;
-use Filament\Forms\Components\Tabs\Tab;
 
 class SaleResource extends Resource
 {
     protected static ?string $model = Sale::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-banknotes';
     protected static ?string $navigationGroup = 'Transaksi';
+    protected static ?int $navigationSort = 1;
     protected static ?string $pluralLabel = 'Penjualan';
 
     public static function form(Form $form): Form
@@ -70,7 +72,7 @@ class SaleResource extends Resource
                 Tables\Columns\TextColumn::make('date')->date()->label('Tanggal'),
                 Tables\Columns\TextColumn::make('total_amount')
                     ->label('Total Bayar')
-                    ->formatStateUsing(fn($state) => 'Rp. ' . number_format($state, 0, ',', '.')),
+                    ->formatStateUsing(fn($state) => 'Rp. ' . number_format($state, 0, ',', ',')),
 
                 Tables\Columns\TextColumn::make('note')->limit(50)->label('Catatan'),
             ])
