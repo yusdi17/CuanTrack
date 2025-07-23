@@ -44,8 +44,9 @@ class LaporanResource extends Resource
                     ->label('Tanggal')
                     ->formatStateUsing(fn($state) => Carbon::parse($state)->translatedFormat('j F Y')),
                 Tables\Columns\TextColumn::make('product.name')->label('Kategori'),
-                Tables\Columns\TextColumn::make('total_amount')->money('IDR')->label('Total Bayar'),
-
+                Tables\Columns\TextColumn::make('total_amount')
+                    ->label('Total Bayar')
+                    ->formatStateUsing(fn($state) => 'Rp. ' . number_format($state, 0, ',', ',')),
             ])
 
             // ->headerActions([
