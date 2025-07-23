@@ -33,6 +33,7 @@ class SaleResource extends Resource
             ->schema([
                 Forms\Components\Select::make('category_id')
                     ->options(Category::all()->pluck('name', 'id'))
+                    ->relationship('category', 'name')
                     ->required()
                     ->reactive()
                     ->label('Kategori'),
