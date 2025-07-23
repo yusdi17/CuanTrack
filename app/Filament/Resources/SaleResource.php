@@ -32,7 +32,7 @@ class SaleResource extends Resource
         return $form
             ->schema([
                 Forms\Components\Select::make('product_id')
-                    ->label('Produk')
+                    ->label('Kategori')
                     ->relationship('product', 'name')
                     ->required(),
                 Forms\Components\DatePicker::make('date')
@@ -51,10 +51,10 @@ class SaleResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('product.name')->label('Kategori'),
                 Tables\Columns\TextColumn::make('date')
                     ->label('Tanggal')
                     ->formatStateUsing(fn($state) => Carbon::parse($state)->translatedFormat('j F Y')),
+                Tables\Columns\TextColumn::make('product.name')->label('Kategori'),
                 Tables\Columns\TextColumn::make('total_amount')
                     ->label('Total Bayar')
                     ->formatStateUsing(fn($state) => 'Rp. ' . number_format($state, 0, ',', ',')),
