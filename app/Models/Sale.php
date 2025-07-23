@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 
 class Sale extends Model
@@ -18,5 +19,4 @@ class Sale extends Model
     {
         return $this->product?->category();
     }
-
 }

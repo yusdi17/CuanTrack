@@ -15,5 +15,7 @@ class EditSale extends EditRecord
         return [
             Actions\DeleteAction::make(),
         ];
+        $data['category_id'] = $this->record->product?->category_id;
+        return $data;
     }
 }

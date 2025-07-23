@@ -31,28 +31,10 @@ class SaleResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('category_id')
-                    ->options(Category::all()->pluck('name', 'id'))
-                    ->relationship('category', 'name')
-                    ->required()
-                    ->reactive()
-                    ->label('Kategori'),
                 Forms\Components\Select::make('product_id')
                     ->label('Produk')
-                    ->options(function (callable $get) {
-                        $categoryId = $get('category_id');
-
-                        if (!$categoryId) {
-                            return [];
-                        }
-
-                        return Product::where('category_id', $categoryId)
-                            ->pluck('name', 'id')
-                            ->toArray();
-                    })
-                    ->required()
-                    ->disabled(fn(callable $get) => !$get('category_id'))
-                    ->reactive(),
+                    ->relationship('product', 'name')
+                    ->required(),
                 Forms\Components\DatePicker::make('date')
                     ->required()
                     ->label('Tanggal'),
@@ -69,8 +51,7 @@ class SaleResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('product.name')->label('Produk'),
-                Tables\Columns\TextColumn::make('product.category.name')->label('Kategori'),
+                Tables\Columns\TextColumn::make('product.name')->label('Kategori'),
                 Tables\Columns\TextColumn::make('date')
                     ->label('Tanggal')
                     ->formatStateUsing(fn($state) => Carbon::parse($state)->translatedFormat('j F Y')),
