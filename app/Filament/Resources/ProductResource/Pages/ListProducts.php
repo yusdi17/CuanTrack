@@ -13,8 +13,8 @@ class ListProducts extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make()->modalHeading('Tambah Produk')
-                ->label('Produk Baru'),
+            Actions\CreateAction::make()->modalHeading('Tambah Kategori')
+                ->label('Kategori Baru'),
         ];
     }
 }

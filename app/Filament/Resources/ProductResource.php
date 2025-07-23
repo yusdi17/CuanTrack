@@ -21,7 +21,7 @@ class ProductResource extends Resource
     protected static ?string $navigationGroup = 'Master Data';
 protected static ?int $navigationSort = 1;
 
-    protected static ?string $pluralLabel = 'Produk';
+    protected static ?string $pluralLabel = 'Kategori';
 
     public static function form(Form $form): Form
     {
@@ -30,11 +30,7 @@ protected static ?int $navigationSort = 1;
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255)
-                    ->label('Nama Produk'),
-                Forms\Components\Select::make('category_id')
-                    ->relationship('category', 'name')
-                    ->required()
-                    ->label('Kategori'),
+                    ->label('Nama Kategori'),
             ]);
     }
 
@@ -42,8 +38,7 @@ protected static ?int $navigationSort = 1;
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')->label('Nama Produk'),
-                Tables\Columns\TextColumn::make('category.name')->label('Kategori'),
+                Tables\Columns\TextColumn::make('name')->label('Nama Kategori'),
             ])
             ->filters([
                 //
