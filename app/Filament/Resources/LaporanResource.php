@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use Carbon\Carbon;
 use Filament\Forms;
 use App\Models\Sale;
 use Filament\Tables;
@@ -39,7 +40,9 @@ class LaporanResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('date')->date()->label('Tanggal'),
+                Tables\Columns\TextColumn::make('date')
+                    ->label('Tanggal')
+                    ->formatStateUsing(fn($state) => Carbon::parse($state)->translatedFormat('j F Y')),
                 Tables\Columns\TextColumn::make('product.name')->label('Produk'),
                 Tables\Columns\TextColumn::make('total_amount')->money('IDR')->label('Total'),
 
