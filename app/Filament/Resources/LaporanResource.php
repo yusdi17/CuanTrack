@@ -47,6 +47,9 @@ class LaporanResource extends Resource
                 Tables\Columns\TextColumn::make('total_amount')
                     ->label('Total Bayar')
                     ->formatStateUsing(fn($state) => 'Rp. ' . number_format($state, 0, ',', ',')),
+                Tables\Columns\TextColumn::make('fee')
+                    ->label('Admin')
+                    ->formatStateUsing(fn($state) => 'Rp. ' . number_format($state, 0, ',', ',')),
             ])
 
             // ->headerActions([
