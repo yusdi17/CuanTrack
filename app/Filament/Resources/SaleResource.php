@@ -41,6 +41,9 @@ class SaleResource extends Resource
                 Forms\Components\TextInput::make('total_amount')
                     ->numeric()
                     ->label('Total Bayar'),
+                Forms\Components\TextInput::make('fee')
+                    ->numeric()
+                    ->label('Admin'),
                 Forms\Components\Textarea::make('note')
                     ->maxLength(500)
                     ->label('Catatan'),
@@ -57,6 +60,9 @@ class SaleResource extends Resource
                 Tables\Columns\TextColumn::make('product.name')->label('Kategori'),
                 Tables\Columns\TextColumn::make('total_amount')
                     ->label('Total Bayar')
+                    ->formatStateUsing(fn($state) => 'Rp. ' . number_format($state, 0, ',', ',')),
+                Tables\Columns\TextColumn::make('fee')
+                    ->label('Admin')
                     ->formatStateUsing(fn($state) => 'Rp. ' . number_format($state, 0, ',', ',')),
 
                 Tables\Columns\TextColumn::make('note')->limit(50)->label('Catatan'),
