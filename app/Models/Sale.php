@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Sale extends Model
 {
     protected $table = 'sales';
-    protected $fillable = ['product_id', 'date', 'total_amount', 'note'];
+    protected $fillable = ['product_id', 'date', 'total_amount', 'note', 'fee'];
 
     public function product()
     {
