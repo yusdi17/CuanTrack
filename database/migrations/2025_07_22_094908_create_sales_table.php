@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('product_id')->constrained()->onDelete('cascade');
             $table->date('date');
             $table->decimal('total_amount', 15, 2);
+            $table->decimal('fee', 15, 2);
             $table->string('note')->nullable();
             $table->timestamps();
         });
