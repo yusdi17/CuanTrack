@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\Sale as ResourcesSale;
 use Exception;
 use Carbon\Carbon;
 use App\Models\Sale;
@@ -34,7 +35,7 @@ class TransactionController extends Controller
                         'total_revenue' => $totalRevenue,
                         'total_transactions' => $sales->count(),
                     ],
-                    'transactions' => $sales
+                    'transactions' => ResourcesSale::collection($sales),
                 ]
             ], 200);
 
