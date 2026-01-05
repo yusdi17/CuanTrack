@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\PendapatanController;
+use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\AddTransactionController;
 
@@ -22,3 +23,8 @@ Route::get('/products', [ProductController::class, 'index']);
 Route::post('/products', [ProductController::class, 'store']);
 Route::put('/products/{id}', [ProductController::class, 'update']);
 Route::delete('/products/{id}', [ProductController::class, 'delete']);
+
+
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/logout', [LogoutController::class, 'logout']);
+});
