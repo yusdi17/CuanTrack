@@ -17,7 +17,6 @@ Route::get('/user', function (Request $request) {
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/transactions', [TransactionController::class, 'index']);
 Route::get('/fee-today', [PendapatanController::class, 'getTodayIncome']);
-Route::post('/transactions', [AddTransactionController::class, 'store']);
 
 Route::get('/products', [ProductController::class, 'index']);
 Route::post('/products', [ProductController::class, 'store']);
@@ -27,4 +26,7 @@ Route::delete('/products/{id}', [ProductController::class, 'delete']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [LogoutController::class, 'logout']);
+    Route::post('/transactions', [AddTransactionController::class, 'store']);
+    Route::put('/transactions/{id}', [AddTransactionController::class, 'update']);
+    Route::delete('/transactions/{id}', [AddTransactionController::class, 'destroy']);
 });
