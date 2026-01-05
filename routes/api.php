@@ -23,10 +23,10 @@ Route::post('/products', [ProductController::class, 'store']);
 Route::put('/products/{id}', [ProductController::class, 'update']);
 Route::delete('/products/{id}', [ProductController::class, 'delete']);
 
+Route::post('/transactions', [AddTransactionController::class, 'store']);
+Route::put('/transactions/{id}', [AddTransactionController::class, 'update']);
+Route::delete('/transactions/{id}', [AddTransactionController::class, 'destroy']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [LogoutController::class, 'logout']);
-    Route::post('/transactions', [AddTransactionController::class, 'store']);
-    Route::put('/transactions/{id}', [AddTransactionController::class, 'update']);
-    Route::delete('/transactions/{id}', [AddTransactionController::class, 'destroy']);
 });
