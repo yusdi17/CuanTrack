@@ -18,3 +18,4 @@ Route::get('/transactions', [TransactionController::class, 'index']);
 Route::get('/fee-today', [PendapatanController::class, 'getTodayIncome']);
 Route::post('/transactions', [AddTransactionController::class, 'store']);
 Route::get('/products', [ProductController::class, 'index']);
+Route::post('/products', [ProductController::class, 'store']);
