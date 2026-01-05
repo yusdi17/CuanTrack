@@ -17,5 +17,8 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::get('/transactions', [TransactionController::class, 'index']);
 Route::get('/fee-today', [PendapatanController::class, 'getTodayIncome']);
 Route::post('/transactions', [AddTransactionController::class, 'store']);
+
 Route::get('/products', [ProductController::class, 'index']);
 Route::post('/products', [ProductController::class, 'store']);
+Route::put('/products/{id}', [ProductController::class, 'update']);
+Route::delete('/products/{id}', [ProductController::class, 'delete']);
