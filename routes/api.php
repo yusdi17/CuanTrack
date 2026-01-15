@@ -30,3 +30,10 @@ Route::delete('/transactions/{id}', [AddTransactionController::class, 'destroy']
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [LogoutController::class, 'logout']);
 });
+
+Route::get('/config', function () {
+    return response()->json([
+        'is_maintenance' => env('APP_MAINTENANCE_MODE', false),
+        'message' => 'Aplikasi sedang dalam perbaikan sistem. Mohon cek berkala.'
+    ]);
+});
