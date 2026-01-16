@@ -13,11 +13,11 @@ jobs:
 
       - name: Update Code & Restart Docker
         run: |
-
-          cd /CuanTrack
-          git config --global --add safe.directory /CuanTrack
+          cd /root/CuanTrack
+          git config --global --add safe.directory /root/CuanTrack
+          
+          # Update
           git pull origin main
           docker compose up -d --build
           docker compose exec -T app php artisan migrate --force
-          # F. Bersihkan cache
           docker compose exec -T app php artisan optimize:clear
