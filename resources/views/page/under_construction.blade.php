@@ -70,7 +70,7 @@
 
     <nav class="absolute top-0 w-full z-50 py-6">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <img src="{{ asset('public/assets/logo.png') }}" alt="CuanTrack" class="h-10 md:h-12 drop-shadow-sm">
+            <img src="{{ asset('assets/logo.png') }}" alt="CuanTrack" class="h-10 md:h-12 drop-shadow-sm">
             <span class="px-4 py-1 bg-cuan-100 text-cuan-600 rounded-full text-xs font-bold tracking-wide uppercase">
                 Coming Soon
             </span>
