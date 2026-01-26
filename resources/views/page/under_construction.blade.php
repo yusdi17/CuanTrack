@@ -13,8 +13,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
 
     <script>
         tailwind.config = {
@@ -231,10 +229,6 @@
                 </div>
 
                 <div class="w-full md:w-1/2 flex justify-center relative" data-aos="fade-left" data-aos-delay="200">
-                    
-                    <div class="absolute top-0 right-10 bg-white p-3 rounded-2xl shadow-lg animate-float z-20 hidden md:block border border-gray-100 text-cuan-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
-                    </div>
 
                     <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white rotate-3 hover:rotate-0 transition-transform duration-500">
                         <img 
@@ -300,66 +294,6 @@
             offset: 100,
         });
     </script>
-
-    <script>
-document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(Draggable);
-
-    const card = document.getElementById('physics-card');
-    const cord = document.getElementById('elastic-cord');
-    const container = document.getElementById('physics-container');
-    
-    gsap.set(card, { transformOrigin: "50% 0%" });
-
-    const anchorY = 110; 
-
-    function updateCord() {
-        const containerRect = container.getBoundingClientRect();
-        
-        const centerX = containerRect.width / 2;
-
-        const cardX = this.x; 
-        const cardY = this.y; 
-        
-        cord.setAttribute("x2", (containerRect.width / 2) + cardX);
-        cord.setAttribute("y2", anchorY + cardY);
-        
-        const angleRad = Math.atan2(cardX, cardY); 
-        const angleDeg = angleRad * (180 / Math.PI) * -1; 
-
-        gsap.set(card, { rotation: angleDeg * 0.8 });
-    }
-
-    Draggable.create(card, {
-        type: "x,y", 
-        edgeResistance: 0.5,
-        bounds: { top: 0, left: -1000, right: 1000, bottom: 1000 },
-
-        onDrag: updateCord,
-
-        onRelease: function() {
-            gsap.to(this.target, {
-                x: 0,
-                y: 0,
-                rotation: 0,
-                duration: 1.5,
-                ease: "elastic.out(1, 0.2)", 
-                
-                onUpdate: () => {
-                    const currentX = gsap.getProperty(card, "x");
-                    const currentY = gsap.getProperty(card, "y");
-                    const rect = container.getBoundingClientRect();
-                    
-                    cord.setAttribute("x2", (rect.width / 2) + currentX);
-                    cord.setAttribute("y2", anchorY + currentY);
-                }
-            });
-        }
-    });
-    
-    gsap.set(cord, { x2: "50%", y2: anchorY });
-});
-</script>
 </body>
 
 </html>
