@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
 
     <script>
         tailwind.config = {
@@ -24,7 +27,7 @@
                         cuan: {
                             50: '#f0fdf4',
                             100: '#dcfce7',
-                            500: '#4CAF50', // Warna Utama Logo
+                            500: '#4CAF50',
                             600: '#388E3C',
                             900: '#14532d',
                         }
@@ -58,17 +61,16 @@
         }
     </script>
     <style>
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
+        /* Mencegah overflow horizontal saat animasi masuk dari samping */
+        body {
+            overflow-x: hidden;
         }
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-    <nav class="absolute top-0 w-full z-50 py-6">
+    <nav class="absolute top-0 w-full z-50 py-6" data-aos="fade-down" data-aos-duration="1000">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <img src="{{ asset('assets/logo.png') }}" alt="CuanTrack" class="h-10 md:h-12 drop-shadow-sm">
             <span class="px-4 py-1 bg-cuan-100 text-cuan-600 rounded-full text-xs font-bold tracking-wide uppercase">
@@ -111,7 +113,8 @@
                 </div>
             </div>
 
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-cuan-500">
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-cuan-500"
+                 data-aos="fade-up" data-aos-delay="1000" data-aos-offset="0">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -122,14 +125,14 @@
 
     <section class="py-20 bg-white relative">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Kenapa Harus CuanTrack?</h2>
                 <p class="text-gray-500">Fitur canggih yang membuat pencatatan keuangan jadi menyenangkan.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                <div
+                <div data-aos="fade-up" data-aos-delay="0"
                     class="group p-8 rounded-3xl bg-gray-50 hover:bg-cuan-50 transition-colors duration-300 border border-gray-100 hover:border-cuan-200 text-center">
                     <div
                         class="w-16 h-16 bg-cuan-100 text-cuan-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-sm">
@@ -148,7 +151,7 @@
                     </p>
                 </div>
 
-                <div
+                <div data-aos="fade-up" data-aos-delay="200"
                     class="group p-8 rounded-3xl bg-gray-50 hover:bg-cuan-50 transition-colors duration-300 border border-gray-100 hover:border-cuan-200 text-center">
                     <div
                         class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-sm">
@@ -165,7 +168,7 @@
                     </p>
                 </div>
 
-                <div
+                <div data-aos="fade-up" data-aos-delay="400"
                     class="group p-8 rounded-3xl bg-gray-50 hover:bg-cuan-50 transition-colors duration-300 border border-gray-100 hover:border-cuan-200 text-center">
                     <div
                         class="w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-sm">
@@ -186,11 +189,71 @@
         </div>
     </section>
 
+    <section class="py-24 overflow-hidden relative">
+        <div
+            class="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cuan-100/40 to-green-50/40 rounded-full blur-3xl -z-10 opacity-60">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+
+                <div class="w-full md:w-1/2 text-left" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Selalu dalam <br>
+                        <span class="text-cuan-600">Genggamanmu</span>
+                    </h2>
+                    <p class="text-gray-500 text-lg mb-8 leading-relaxed">
+                        CuanTrack dirancang untuk akses cepat dan mudah kapanpun kamu butuh mencatat pengeluaran.
+                    </p>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <span
+                                class="w-6 h-6 rounded-full bg-cuan-100 text-cuan-600 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="3" stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </span>
+                            <span class="text-gray-700 font-medium">Akses Instan</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span
+                                class="w-6 h-6 rounded-full bg-cuan-100 text-cuan-600 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="3" stroke="currentColor" class="w-3 h-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </span>
+                            <span class="text-gray-700 font-medium">Ringan & Responsif</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/2 flex justify-center relative" data-aos="fade-left" data-aos-delay="200">
+                    
+                    <div class="absolute top-0 right-10 bg-white p-3 rounded-2xl shadow-lg animate-float z-20 hidden md:block border border-gray-100 text-cuan-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+                    </div>
+
+                    <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <img 
+                            src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                            alt="Aplikasi dalam Genggaman" 
+                            class="w-[400px] md:w-[450px] object-cover"
+                        >
+                        <div class="absolute inset-0 bg-cuan-900/10 mix-blend-overlay"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="py-20">
         <div class="container mx-auto px-6">
-            <div
-                class="bg-gradient-to-br from-cuan-900 to-cuan-600 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
+            <div class="bg-gradient-to-br from-cuan-900 to-cuan-600 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl"
+                 data-aos="zoom-in" data-aos-duration="1000">
 
                 <div
                     class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
@@ -220,7 +283,7 @@
         </div>
     </section>
 
-    <footer class="bg-gray-50 py-10 border-t border-gray-200">
+    <footer class="bg-gray-50 py-10 border-t border-gray-200" data-aos="fade-up" data-aos-offset="10">
         <div class="container mx-auto px-6 text-center">
             <img src="{{ asset('assets/logo.png') }}" alt="Logo Footer"
                 class="h-8 mx-auto mb-4 opacity-50 grayscale hover:grayscale-0 transition-all">
@@ -228,6 +291,75 @@
         </div>
     </footer>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+        });
+    </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(Draggable);
+
+    const card = document.getElementById('physics-card');
+    const cord = document.getElementById('elastic-cord');
+    const container = document.getElementById('physics-container');
+    
+    gsap.set(card, { transformOrigin: "50% 0%" });
+
+    const anchorY = 110; 
+
+    function updateCord() {
+        const containerRect = container.getBoundingClientRect();
+        
+        const centerX = containerRect.width / 2;
+
+        const cardX = this.x; 
+        const cardY = this.y; 
+        
+        cord.setAttribute("x2", (containerRect.width / 2) + cardX);
+        cord.setAttribute("y2", anchorY + cardY);
+        
+        const angleRad = Math.atan2(cardX, cardY); 
+        const angleDeg = angleRad * (180 / Math.PI) * -1; 
+
+        gsap.set(card, { rotation: angleDeg * 0.8 });
+    }
+
+    Draggable.create(card, {
+        type: "x,y", 
+        edgeResistance: 0.5,
+        bounds: { top: 0, left: -1000, right: 1000, bottom: 1000 },
+
+        onDrag: updateCord,
+
+        onRelease: function() {
+            gsap.to(this.target, {
+                x: 0,
+                y: 0,
+                rotation: 0,
+                duration: 1.5,
+                ease: "elastic.out(1, 0.2)", 
+                
+                onUpdate: () => {
+                    const currentX = gsap.getProperty(card, "x");
+                    const currentY = gsap.getProperty(card, "y");
+                    const rect = container.getBoundingClientRect();
+                    
+                    cord.setAttribute("x2", (rect.width / 2) + currentX);
+                    cord.setAttribute("y2", anchorY + currentY);
+                }
+            });
+        }
+    });
+    
+    gsap.set(cord, { x2: "50%", y2: anchorY });
+});
+</script>
 </body>
 
 </html>
