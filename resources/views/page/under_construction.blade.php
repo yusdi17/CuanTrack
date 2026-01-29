@@ -68,6 +68,7 @@
 
 <body class="bg-gray-50 text-gray-800 antialiased">
 
+    {{-- Header --}}
     <nav class="absolute top-0 w-full z-50 py-6" data-aos="fade-down" data-aos-duration="1000">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <img src="{{ asset('assets/logo.png') }}" alt="CuanTrack" class="h-10 md:h-12 drop-shadow-sm">
@@ -77,6 +78,7 @@
         </div>
     </nav>
 
+    {{-- Section 1 --}}
     <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
             <div
@@ -120,7 +122,7 @@
             </div>
     </section>
 
-
+    {{-- Section 2 --}}
     <section class="py-20 bg-white relative">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
@@ -187,6 +189,7 @@
         </div>
     </section>
 
+    {{-- Section 3 --}}
     <section class="py-24 overflow-hidden relative">
         <div
             class="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cuan-100/40 to-green-50/40 rounded-full blur-3xl -z-10 opacity-60">
@@ -244,6 +247,7 @@
         </div>
     </section>
 
+    {{-- Section 4 Download --}}
     <section class="py-20">
         <div class="container mx-auto px-6">
             <div class="bg-gradient-to-br from-cuan-900 to-cuan-600 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl"
@@ -277,6 +281,7 @@
         </div>
     </section>
 
+    {{-- Footer --}}
     <footer class="bg-gray-50 py-10 border-t border-gray-200" data-aos="fade-up" data-aos-offset="10">
         <div class="container mx-auto px-6 text-center">
             <img src="{{ asset('assets/logo.png') }}" alt="Logo Footer"
