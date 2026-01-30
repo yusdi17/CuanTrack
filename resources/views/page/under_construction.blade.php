@@ -289,8 +289,8 @@
 
                 <div class="relative flex flex-col md:flex-row items-center mb-12 md:justify-between">
                     <div class="w-full md:w-5/12 md:text-right pl-20 md:pl-0 md:pr-12 mb-4 md:mb-0 order-2 md:order-1" data-aos="fade-right">
-                        <h3 class="text-lg font-bold text-gray-900">Backend & Mobile Dev</h3>
-                        <p class="text-sm text-gray-500 mt-1">Integrasi Laravel API dengan Flutter dan fitur AI Scan Struk.</p>
+                        <h3 class="text-lg font-bold text-gray-900">Pengembangan Aplikasi</h3>
+                        <p class="text-sm text-gray-500 mt-1">Integrasi fitur AI Scan Struk.</p>
                         <span class="inline-block mt-2 px-3 py-1 bg-orange-100 text-orange-600 text-xs font-bold rounded-full animate-pulse">Sedang Proses</span>
                     </div>
                     
@@ -314,6 +314,61 @@
                         <span class="inline-block mt-2 px-3 py-1 bg-gray-100 text-gray-500 text-xs font-bold rounded-full">Segera</span>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white relative overflow-hidden">
+        
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-[20%] left-[10%] w-72 h-72 bg-cuan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float"></div>
+            <div class="absolute top-[20%] right-[10%] w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float" style="animation-delay: 2s"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            
+            <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+                
+                <div class="flex items-center justify-center mb-6">
+                    <div class="flex -space-x-4">
+                        <img class="w-12 h-12 rounded-full border-4 border-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="User 1">
+                        <img class="w-12 h-12 rounded-full border-4 border-white object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt="User 2">
+                        <img class="w-12 h-12 rounded-full border-4 border-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="User 3">
+                        <img class="w-12 h-12 rounded-full border-4 border-white object-cover" src="https://images.unsplash.com/photo-1521119989659-a83eee488058?auto=format&fit=crop&w=100&q=80" alt="User 4">
+                        <div class="w-12 h-12 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-600">
+                            +2K
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Jadilah yang Pertama <br>
+                    <span class="text-cuan-600">Merasakan Kemudahannya</span>
+                </h2>
+                
+                <p class="text-gray-500 text-lg mb-10 leading-relaxed">
+                    Bergabunglah dengan <strong>2,000+ orang</strong> yang sudah tidak sabar menunggu rilisnya CuanTrack. Dapatkan notifikasi eksklusif saat kami launching!
+                </p>
+
+                <div class="max-w-md mx-auto bg-white p-2 rounded-full shadow-xl border border-gray-200 flex items-center transition-all focus-within:ring-4 focus-within:ring-cuan-100 focus-within:border-cuan-500">
+                    <div class="pl-4 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                    </div>
+                    <input type="email" placeholder="Masukkan email kamu..." class="w-full px-4 py-3 bg-transparent outline-none text-gray-700 placeholder-gray-400" required>
+                    <button class="bg-cuan-600 hover:bg-cuan-700 text-white px-6 py-3 rounded-full font-bold transition-colors shadow-md shrink-0">
+                        Gabung Antrean
+                    </button>
+                </div>
+
+                <p class="mt-6 text-sm text-gray-400 flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-green-500">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                    </svg>
+                    Bebas Spam. Unsubscribe kapan saja.
+                </p>
 
             </div>
         </div>
