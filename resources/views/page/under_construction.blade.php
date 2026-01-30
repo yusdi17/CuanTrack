@@ -247,7 +247,79 @@
         </div>
     </section>
 
-    {{-- Section 4 Download --}}
+    {{-- Section 4 --}}
+    <section class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Perjalanan Pengembangan</h2>
+                <p class="text-gray-500">Kami bekerja keras untuk memastikan CuanTrack siap membantu finansialmu.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto relative">
+                <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 transform md:-translate-x-1/2"></div>
+
+                <div class="relative flex flex-col md:flex-row items-center mb-12 md:justify-between">
+                    <div class="w-full md:w-5/12 md:text-right pl-20 md:pl-0 md:pr-12 mb-4 md:mb-0 order-2 md:order-1" data-aos="fade-right">
+                        <h3 class="text-lg font-bold text-gray-900">Perencanaan & Riset</h3>
+                        <p class="text-sm text-gray-500 mt-1">Analisis kebutuhan pengguna dan desain sistem database.</p>
+                        <span class="inline-block mt-2 px-3 py-1 bg-cuan-100 text-cuan-600 text-xs font-bold rounded-full">Selesai</span>
+                    </div>
+                    
+                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-cuan-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center order-1 md:order-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="white" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                    </div>
+
+                    <div class="hidden md:block w-5/12 order-3"></div>
+                </div>
+
+                <div class="relative flex flex-col md:flex-row items-center mb-12 md:justify-between">
+                    <div class="hidden md:block w-5/12 order-1"></div>
+                    
+                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-cuan-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center order-1 md:order-2">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="white" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                    </div>
+
+                    <div class="w-full md:w-5/12 pl-20 md:pl-12 order-2 md:order-3" data-aos="fade-left">
+                        <h3 class="text-lg font-bold text-gray-900">UI/UX Design</h3>
+                        <p class="text-sm text-gray-500 mt-1">Merancang antarmuka modern dan pengalaman pengguna yang intuitif.</p>
+                        <span class="inline-block mt-2 px-3 py-1 bg-cuan-100 text-cuan-600 text-xs font-bold rounded-full">Selesai</span>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col md:flex-row items-center mb-12 md:justify-between">
+                    <div class="w-full md:w-5/12 md:text-right pl-20 md:pl-0 md:pr-12 mb-4 md:mb-0 order-2 md:order-1" data-aos="fade-right">
+                        <h3 class="text-lg font-bold text-gray-900">Backend & Mobile Dev</h3>
+                        <p class="text-sm text-gray-500 mt-1">Integrasi Laravel API dengan Flutter dan fitur AI Scan Struk.</p>
+                        <span class="inline-block mt-2 px-3 py-1 bg-orange-100 text-orange-600 text-xs font-bold rounded-full animate-pulse">Sedang Proses</span>
+                    </div>
+                    
+                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center order-1 md:order-2">
+                        <div class="w-2 h-2 bg-white rounded-full animate-ping"></div>
+                    </div>
+
+                    <div class="hidden md:block w-5/12 order-3"></div>
+                </div>
+
+                <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+                    <div class="hidden md:block w-5/12 order-1"></div>
+                    
+                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-200 rounded-full border-4 border-white z-10 flex items-center justify-center order-1 md:order-2">
+                        <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
+                    </div>
+
+                    <div class="w-full md:w-5/12 pl-20 md:pl-12 order-2 md:order-3 opacity-60" data-aos="fade-left">
+                        <h3 class="text-lg font-bold text-gray-900">Beta Launch</h3>
+                        <p class="text-sm text-gray-500 mt-1">Rilis versi percobaan untuk pengguna terbatas.</p>
+                        <span class="inline-block mt-2 px-3 py-1 bg-gray-100 text-gray-500 text-xs font-bold rounded-full">Segera</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {{-- Section 5 Download --}}
     <section class="py-20">
         <div class="container mx-auto px-6">
             <div class="bg-gradient-to-br from-cuan-900 to-cuan-600 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl"
