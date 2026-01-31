@@ -319,7 +319,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white relative overflow-hidden">
+    {{-- <section class="py-24 bg-white relative overflow-hidden">
         
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none">
             <div class="absolute top-[20%] left-[10%] w-72 h-72 bg-cuan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float"></div>
@@ -372,7 +372,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- Section 5 Download --}}
     <section class="py-20">
