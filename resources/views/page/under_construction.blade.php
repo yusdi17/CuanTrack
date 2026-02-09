@@ -235,7 +235,7 @@
 
                     <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white rotate-3 hover:rotate-0 transition-transform duration-500">
                         <img 
-                            src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                            src="{{ asset('assets/img-ai.jpg') }}" 
                             alt="Aplikasi dalam Genggaman" 
                             class="w-[400px] md:w-[450px] object-cover"
                         >
@@ -375,7 +375,7 @@
     </section> --}}
 
     {{-- Section 5 Download --}}
-    {{-- <section class="py-20">
+    <section class="py-20">
         <div class="container mx-auto px-6">
             <div class="bg-gradient-to-br from-cuan-900 to-cuan-600 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl"
                  data-aos="zoom-in" data-aos-duration="1000">
@@ -406,7 +406,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 
     {{-- Footer --}}
     <footer class="bg-gray-50 py-10 border-t border-gray-200" data-aos="fade-up" data-aos-offset="10">
