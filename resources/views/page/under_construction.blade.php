@@ -375,7 +375,7 @@
     </section> --}}
 
     {{-- Section 5 Download --}}
-    <section class="py-20">
+    {{-- <section class="py-20">
         <div class="container mx-auto px-6">
             <div class="bg-gradient-to-br from-cuan-900 to-cuan-600 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl"
                  data-aos="zoom-in" data-aos-duration="1000">
@@ -406,7 +406,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- Footer --}}
     <footer class="bg-gray-50 py-10 border-t border-gray-200" data-aos="fade-up" data-aos-offset="10">
