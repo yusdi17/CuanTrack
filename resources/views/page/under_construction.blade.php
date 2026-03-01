@@ -291,7 +291,7 @@
                     <div class="w-full md:w-5/12 md:text-right pl-20 md:pl-0 md:pr-12 mb-4 md:mb-0 order-2 md:order-1" data-aos="fade-right">
                         <h3 class="text-lg font-bold text-gray-900">Pengembangan Aplikasi</h3>
                         <p class="text-sm text-gray-500 mt-1">Integrasi fitur AI Scan Struk.</p>
-                        <span class="inline-block mt-2 px-3 py-1 bg-orange-100 text-orange-600 text-xs font-bold rounded-full animate-pulse">Sedang Proses</span>
+                        <span class="inline-block mt-2 px-3 py-1 bg-orange-100 text-orange-600 text-xs font-bold rounded-full animate-pulse">Selesai</span>
                     </div>
                     
                     <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center order-1 md:order-2">
@@ -375,38 +375,37 @@
     </section> --}}
 
     {{-- Section 5 Download --}}
-    {{-- <section class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="bg-gradient-to-br from-cuan-900 to-cuan-600 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl"
-                 data-aos="zoom-in" data-aos-duration="1000">
+    <section class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="bg-gradient-to-br from-cuan-900 to-cuan-600 rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl"
+             data-aos="zoom-in" data-aos-duration="1000">
 
-                <div
-                    class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
-                </div>
+            <div
+                class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+            </div>
 
-                <div class="relative z-10 max-w-2xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Mengatur Keuanganmu?</h2>
-                    <p class="text-cuan-100 text-lg mb-8">
-                        Aplikasi CuanTrack akan segera tersedia untuk perangkat Android.
-                        Pastikan kamu jadi yang pertama mencobanya!
-                    </p>
+            <div class="relative z-10 max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Mengatur Keuanganmu?</h2>
+                <p class="text-cuan-100 text-lg mb-8">
+                    Aplikasi CuanTrack sekarang sudah tersedia untuk perangkat Android.
+                    Download sekarang dan mulai atur keuanganmu!
+                </p>
 
-                    <button
-                        class="bg-white text-cuan-600 font-bold py-4 px-8 rounded-full shadow-lg cursor-not-allowed opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center gap-3 mx-auto">
-                        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path
-                                d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
-                        </svg>
-                        <span>Download di Play Store (Segera)</span>
-                    </button>
+                <a href="{{ asset('apk/cuantrack_beta_version.apk') }}" download="CuanTrack.apk"
+                   class="bg-white text-cuan-600 font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl opacity-90 hover:opacity-100 transition-all flex w-fit items-center justify-center gap-3 mx-auto">
+                    <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
+                    </svg>
+                    <span>Download APK Sekarang</span>
+                </a>
 
-                    <p class="mt-6 text-xs text-cuan-200">
-                        *Estimasi Rilis: 2026
-                    </p>
-                </div>
+                <p class="mt-6 text-xs text-cuan-200">
+                    *Versi Android 8.0 (Oreo) ke atas
+                </p>
             </div>
         </div>
-    </section> --}}
+    </div>
+</section>
 
     {{-- Footer --}}
     <footer class="bg-gray-50 py-10 border-t border-gray-200" data-aos="fade-up" data-aos-offset="10">
