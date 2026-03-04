@@ -305,13 +305,19 @@
                         data-aos="fade-right">
                         <h3 class="text-lg font-bold text-gray-900">Pengembangan Aplikasi</h3>
                         <p class="text-sm text-gray-500 mt-1">Integrasi fitur AI Scan Struk.</p>
+
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-orange-100 text-orange-600 text-xs font-bold rounded-full animate-pulse">Selesai</span>
+                            class="inline-block mt-2 px-3 py-1 bg-cuan-100 text-cuan-600 text-xs font-bold rounded-full">Selesai</span>
                     </div>
 
                     <div
-                        class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center order-1 md:order-2">
-                        <div class="w-2 h-2 bg-white rounded-full animate-ping"></div>
+                        class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-cuan-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center order-1 md:order-2">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                            stroke="white" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+
                     </div>
 
                     <div class="hidden md:block w-5/12 order-3"></div>
@@ -321,15 +327,20 @@
                     <div class="hidden md:block w-5/12 order-1"></div>
 
                     <div
-                        class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-200 rounded-full border-4 border-white z-10 flex items-center justify-center order-1 md:order-2">
-                        <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
+                        class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-cuan-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center order-1 md:order-2">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                            stroke="white" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+
                     </div>
 
                     <div class="w-full md:w-5/12 pl-20 md:pl-12 order-2 md:order-3 opacity-60" data-aos="fade-left">
                         <h3 class="text-lg font-bold text-gray-900">Beta Launch</h3>
                         <p class="text-sm text-gray-500 mt-1">Rilis versi percobaan untuk pengguna terbatas.</p>
                         <span
-                            class="inline-block mt-2 px-3 py-1 bg-gray-100 text-gray-500 text-xs font-bold rounded-full">Segera</span>
+                            class="inline-block mt-2 px-3 py-1 bg-cuan-100 text-cuan-600 text-xs font-bold rounded-full">Selesai</span>
                     </div>
                 </div>
 
