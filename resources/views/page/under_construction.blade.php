@@ -344,6 +344,27 @@
                     </div>
                 </div>
 
+                <div class="relative flex flex-col md:flex-row items-center mt-12 md:mt-0 md:justify-between">
+                    <div class="w-full md:w-5/12 md:text-right pl-20 md:pl-0 md:pr-12 mb-4 md:mb-0 order-2 md:order-1"
+                        data-aos="fade-right">
+                        <h3 class="text-lg font-bold text-gray-900">Rilis Resmi (Versi 1.0)</h3>
+                        <p class="text-sm text-gray-500 mt-1">Peluncuran versi stabil pertama (V1.0) untuk seluruh
+                            pengguna publik dengan fitur penuh.</p>
+
+                        <span
+                            class="inline-block mt-2 px-3 py-1 bg-orange-100 text-orange-600 text-xs font-bold rounded-full animate-pulse">
+                            Proses
+                        </span>
+                    </div>
+
+                    <div
+                        class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center order-1 md:order-2">
+                        <div class="w-2 h-2 bg-white rounded-full animate-ping"></div>
+                    </div>
+
+                    <div class="hidden md:block w-5/12 order-3"></div>
+                </div>
+
             </div>
         </div>
     </section>
