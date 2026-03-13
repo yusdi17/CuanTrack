@@ -6,3 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('page.under_construction');
 });
+
+Route::get('/download', function () {
+    return view('page.halaman_download');
+});
