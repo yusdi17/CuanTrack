@@ -59,7 +59,7 @@
                         </td>
 
                         <td class="block md:table-cell p-4 bg-gray-50 md:bg-transparent align-middle text-center">
-                            <a href="{{ asset('downloads/cuantrack-1.2.3.apk') }}" download="CuanTrack-v1.2.3.apk" 
+                            <a href="https://github.com/yusdi17/CuanTrack-Mobile/releases/download/cuantrack/cuantrack-1.2.3.apk" download="CuanTrack-v1.2.3.apk" 
                                class="block md:inline-block w-full md:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-3 md:py-2 px-6 rounded-md shadow-sm transition-transform active:scale-95 text-center">
                                 Download
                             </a>
