@@ -442,7 +442,7 @@
                         Download sekarang dan mulai atur keuanganmu!
                     </p>
 
-                    <a href="#" download="CuanTrack.apk"
+                    <a href="https://github.com/yusdi17/CuanTrack-new/releases/download/new/cuantrack-beta.apk" download="CuanTrack.apk"
                         class="bg-white text-cuan-600 font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl opacity-90 hover:opacity-100 transition-all flex w-fit items-center justify-center gap-3 mx-auto">
                         {{-- <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path
