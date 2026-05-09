@@ -30,7 +30,6 @@ services:
       - laravel-net
 
   # Database Service
-
   db:
     image: mysql:8.0
     container_name: cuantrack-db
